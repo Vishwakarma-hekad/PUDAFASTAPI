@@ -117,7 +117,7 @@ class CompoundWallDetails:
             "SIDE2":side2_lines,
         }
 
-    def get_height(self,inputText: str, startDelimeter: None, endDelimeter: 'h'):
+    def get_height(self,inputText: str, startDelimeter: None, endDelimeter= "h"):
 
         height_value = 0.0
 

@@ -9432,7 +9432,7 @@ ramp_text = '25.00 mt. long 3.14 mt. High 5.40 mt. Wide Vehicular Ramp'
 startDelimeter is optional like if u know only end index 
 
 """
-def extract_dimensions_fromtext(inputText:str, startDelimeter:None, endDelimeter:'h'):
+def extract_dimensions_fromtext(inputText:str, startDelimeter:None, endDelimeter="h"):
 
 	height_value = 0.0
 	start_idx = 0

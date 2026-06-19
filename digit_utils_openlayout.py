@@ -72,7 +72,7 @@ startDelimeter is optional like if u know only end index
 """
 
 
-def extract_dimensions_fromtext(inputText: str, startDelimeter: None, endDelimeter: 'h'):
+def extract_dimensions_fromtext(inputText: str, startDelimeter: None, endDelimeter= "h"):
     height_value = 0.0
     start_idx = 0
 

@@ -1,0 +1,23 @@
+     # DXF and DWG files
+DXF_files/
+DWG_files/
+*.dxf
+*.dwg
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# Generated files
+Json_Summary_files/

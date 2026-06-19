@@ -13,7 +13,7 @@ venv/
 env/
 
 # Logs
-logs/
+ServerLogFiles/
 *.log
 
 # Environment variables
@@ -21,3 +21,4 @@ logs/
 
 # Generated files
 Json_Summary_files/
+*.json

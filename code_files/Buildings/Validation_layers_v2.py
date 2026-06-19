@@ -1888,7 +1888,7 @@ class CommonValidationLayers:
 
                 PrintAdditionalDetails_polygon = Polygon(np.array([padp[0:2] for padp in PrintAdditionalDetails_entity.get_points()]))
 
-                vertices = tuple(WallCompound_entity.get_points())
+                vertices = tuple(PrintAdditionalDetails_entity.get_points())
 
                 if vertices in unique_polygons:
 

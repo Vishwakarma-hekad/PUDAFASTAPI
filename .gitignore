@@ -1,4 +1,4 @@
-     # DXF and DWG files
+# DXF and DWG files
 DXF_files/
 DWG_files/
 *.dxf
@@ -7,10 +7,16 @@ DWG_files/
 # Python cache
 __pycache__/
 *.pyc
+*.pyo
+
+# IDE
+.idea/
+.vscode/
 
 # Virtual environments
 venv/
 env/
+BPConnect_env/
 
 # Logs
 ServerLogFiles/
@@ -21,4 +27,7 @@ ServerLogFiles/
 
 # Generated files
 Json_Summary_files/
-*.json
+
+# OS files
+.DS_Store
+Thumbs.db

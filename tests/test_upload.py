@@ -1,5 +1,6 @@
 from fastapi.testclient import TestClient
 from app import app
+from pathlib import Path
 
 client = TestClient(app)
 MY_API_KEY="X7kP@92Lm#SecureAPIKey_2026_Vishwa"
@@ -12,9 +13,11 @@ HEADERS = {
     "password": USER_PASSWORD
 }
 
+SAMPLE_DWG = Path(__file__).parent / "Jaswitha West Kondapur.dwg"
+
 def test_real_dwg_upload():
 
-    with open("tests/Jaswitha West Kondapur.dwg", "rb") as f:
+    with open(SAMPLE_DWG, "rb") as f:
 
         response = client.post(
             "/api/drawingrequest/create",

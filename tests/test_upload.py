@@ -15,7 +15,7 @@ HEADERS = {
     "password": USER_PASSWORD
 }
 
-SAMPLE_DWG = os.path.join(Path(__file__).root, "Jaswitha West Kondapur.dwg")
+SAMPLE_DWG = os.path.join(Path(__file__), "Jaswitha West Kondapur.dwg")
 # @pytest.mark.skipif(not SAMPLE_DWG.exists(), reason="no sample DWG in CI")
 def test_real_dwg_upload():
 

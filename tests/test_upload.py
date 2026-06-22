@@ -1,6 +1,7 @@
 from fastapi.testclient import TestClient
 from app import app
 from pathlib import Path
+import pytest
 
 client = TestClient(app)
 MY_API_KEY="X7kP@92Lm#SecureAPIKey_2026_Vishwa"
@@ -14,7 +15,7 @@ HEADERS = {
 }
 
 SAMPLE_DWG = Path(__file__).parent / "Jaswitha West Kondapur.dwg"
-
+@pytest.mark.skipif(not SAMPLE_DWG.exists(), reason="no sample DWG in CI")
 def test_real_dwg_upload():
 
     with open(SAMPLE_DWG, "rb") as f:

@@ -15,7 +15,7 @@ HEADERS = {
 }
 
 SAMPLE_DWG = Path(__file__).root / "Jaswitha West Kondapur.dwg"
-@pytest.mark.skipif(not SAMPLE_DWG.exists(), reason="no sample DWG in CI")
+# @pytest.mark.skipif(not SAMPLE_DWG.exists(), reason="no sample DWG in CI")
 def test_real_dwg_upload():
 
     with open(SAMPLE_DWG, "rb") as f:
